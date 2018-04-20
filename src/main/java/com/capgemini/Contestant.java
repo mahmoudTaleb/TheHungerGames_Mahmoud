@@ -9,5 +9,5 @@ public class Contestant {
     public void startedBattle(){
 
     }
-    
+
 }
