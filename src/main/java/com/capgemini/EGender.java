@@ -1,6 +1,7 @@
 package com.capgemini;
 
-public enum EGender {
+//  I've made this to select whether the player's gender M/F.
+    public enum EGender {
     MALE, FEMALE
 
 }

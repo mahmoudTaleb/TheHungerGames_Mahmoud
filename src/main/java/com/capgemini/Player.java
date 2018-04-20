@@ -1,18 +1,29 @@
 package com.capgemini;
 
-import java.util.List;
+// class variables
 
 public class Player {
     private int playerID;
     private int playerDistrictNo;
     private String gender;
+    private int playerAlive;
+
+// constructors for the variables.
+
+    public Player(int playerAlive) {
+        this.playerAlive = playerAlive;
+    }
 
     public Player(int playerID, int playerDistrictNo, String gender) {
         this.playerID = playerID;
         this.playerDistrictNo = playerDistrictNo;
         this.gender = gender;
+
+        playerAlive = Math.min(playerAlive + 1, 24);
+        System.out.println(playerAlive);
     }
 
+// below are setters and getters for objects within the class.
 
     public int getPlayerID() {
         return playerID;
@@ -37,4 +48,5 @@ public class Player {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
 }
