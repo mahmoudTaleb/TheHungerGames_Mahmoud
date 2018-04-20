@@ -1,30 +1,18 @@
 package com.capgemini;
 
+import java.util.List;
+
 public class Player {
     private int playerID;
     private int playerDistrictNo;
+    private String gender;
 
-    public Player(int playerID, int playerDistrictNo) {
+    public Player(int playerID, int playerDistrictNo, String gender) {
         this.playerID = playerID;
         this.playerDistrictNo = playerDistrictNo;
+        this.gender = gender;
     }
 
-
-
-    public Player() {
-    }
-
-    public void attack(boolean) {
-
-    }
-
-    public void fight(boolean) {
-
-    }
-
-    public void isAlive(boolean) {
-
-    }
 
     public int getPlayerID() {
         return playerID;
@@ -40,5 +28,13 @@ public class Player {
 
     public void setPlayerDistrictNo(int playerDistrictNo) {
         this.playerDistrictNo = playerDistrictNo;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 }

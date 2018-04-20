@@ -2,11 +2,11 @@ package com.capgemini;
 
 public class Contestant {
 
-    public void training(){
+    public void training() {
 
     }
 
-    public void startedBattle(){
+    public void startedBattle() {
 
     }
 
